@@ -64,6 +64,6 @@ Nested timeouts
 
 Summary
 
-- [dogslow][https://bitbucket.org/evzijst/dogslow] -- tracebacks of slow requests
-- [geordi][https://bitbucket.org/brodie/geordi] -- profiles production environments
-- [interruptingcow][https://bitbucket.org/evzijst/interruptingcow] -- prevents slowness and fail gracefully
+- [dogslow](https://bitbucket.org/evzijst/dogslow) -- tracebacks of slow requests
+- [geordi](https://bitbucket.org/brodie/geordi) -- profiles production environments
+- [interruptingcow](https://bitbucket.org/evzijst/interruptingcow) -- prevents slowness and fail gracefully
