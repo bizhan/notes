@@ -45,7 +45,7 @@ Consequences
 `django-geordi`
 
 - Selectively profile individual requests
-- Add ?__geordi__ to any URL to enable the `VisorMiddleware` (accessible to
+- Add `?__geordi__` to any URL to enable the `VisorMiddleware` (accessible to
   admin users only)
 - Produces PDF call graph
 - Run outside the worker pool without timeouts (`celeryd`)
@@ -64,6 +64,6 @@ Nested timeouts
 
 Summary
 
-- [`dogslow`][https://bitbucket.org/evzijst/dogslow] -- tracebacks of slow requests
-- [`geordi`][https://bitbucket.org/brodie/geordi] -- profiles production environments
-- [`interruptingcow`][https://bitbucket.org/evzijst/interruptingcow] -- prevents slowness and fail gracefully
+- [dogslow][https://bitbucket.org/evzijst/dogslow] -- tracebacks of slow requests
+- [geordi][https://bitbucket.org/brodie/geordi] -- profiles production environments
+- [interruptingcow][https://bitbucket.org/evzijst/interruptingcow] -- prevents slowness and fail gracefully
