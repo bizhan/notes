@@ -35,7 +35,7 @@ On most installations, the configuration files live in $PGBASE.
   * rules apply in a top-down fashion
 
 postgresql.conf
-~~~~~~~~~~~~~~~
+
 - Most settings just require a server reload to take effect. 
 - Some require a full server restart (such as `shared_buffers`).
 - Many can be set on a per-session basis.
@@ -51,7 +51,7 @@ syslog -- If you have a syslog infrastructure
 standard format to files -- If you are using tools that need standard format.
 otherwise, CSV format to files.
 
-WHat to log?
+What to log?
 
     log_destination = 'csvlog'
     log_directory = 'pg_log'
