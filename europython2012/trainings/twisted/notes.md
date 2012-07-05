@@ -9,25 +9,25 @@ Handle request elsewhere
 - Reactor listens on a port
 - For each connection, the reactor asks the factory for new protocol
 
-    from twisted.internet import reactor, protocol, endpoints
+        from twisted.internet import reactor, protocol, endpoints
 
-    class UpperProtocol(protocol.Protocol):
+        class UpperProtocol(protocol.Protocol):
 
-        def connectionMade(self):
-            self.transport.write('Hi! Send me text to converto to uppercase\n')
+            def connectionMade(self):
+                self.transport.write('Hi! Send me text to converto to uppercase\n')
 
-        def connectionLost(self, reason):
-            pass
+            def connectionLost(self, reason):
+                pass
 
-        def dataReceived(self, data):
-            self.transport.write(data.upper())
-            self.transport.loseConnection()
+            def dataReceived(self, data):
+                self.transport.write(data.upper())
+                self.transport.loseConnection()
 
-    factory = protocol.ServerFactory()
-    factory.protocol = UpperProtocol
+        factory = protocol.ServerFactory()
+        factory.protocol = UpperProtocol
 
-    endpoints.serverFromString(reactor, "tcp:8000").listen(factory)
-    reactor.run()
+        endpoints.serverFromString(reactor, "tcp:8000").listen(factory)
+        reactor.run()
 
 Recap
 
