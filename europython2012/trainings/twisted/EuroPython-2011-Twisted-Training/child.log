@@ -1,0 +1,12 @@
+2012-07-05 10:08:08+0200 [-] Log opened.
+2012-07-05 10:08:39+0200 [-] Starting factory <HTTPClientFactory: http://dialelo.com>
+2012-07-05 10:08:40+0200 [HTTPPageGetter,client] Stopping factory <HTTPClientFactory: http://dialelo.com>
+2012-07-05 10:09:25+0200 [-] Starting factory <HTTPClientFactory: dialelo.com>
+2012-07-05 10:09:25+0200 [Uninitialized] Stopping factory <HTTPClientFactory: dialelo.com>
+2012-07-05 10:09:34+0200 [-] Starting factory <HTTPClientFactory: http://dialelo.com>
+2012-07-05 10:09:35+0200 [HTTPPageGetter,client] Stopping factory <HTTPClientFactory: http://dialelo.com>
+2012-07-05 10:09:36+0200 [-] Unhandled error in Deferred:
+2012-07-05 10:09:36+0200 [-] Unhandled Error
+	Traceback (most recent call last):
+	Failure: twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 111: Connection refused.
+	
