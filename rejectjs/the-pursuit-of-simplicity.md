@@ -3,6 +3,8 @@
 
 Achieve results quickly, doing more with less.
 
+Minimize the steps required to achieve your goals.
+
 Don't be a **slave** of your tools.
 
 ### Frameworks
