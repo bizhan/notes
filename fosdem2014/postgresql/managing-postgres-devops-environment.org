@@ -1,0 +1,105 @@
+* Managing Postgres in a DevOps environment
+
+** DevOps
+
+*** The problem
+
+Traditional separation between Dev department and Ops department.
+
+Lack of cooperation/communication leads to misunderstandings.
+
+Dev VS Ops.
+
+Decreased productivity.
+
+*** Core elements of DevOps
+
+**** Versioning
+**** Team work
+**** Automation
+**** Repeatability
+**** Testing
+**** Monitoring
+**** Continuous improvement
+**** Agile management
+
+Dev + DBA + Ops
+
+** Dev + DBA work together on
+
+*** SQL
+*** DB Modelling
+*** Change management
+*** Query explain
+*** Query monitoring
+*** PostgreSQL new features
+*** GIS
+*** Extensions
+*** Testing
+
+** DBA + Ops
+
+*** System/DB setup, tuning and updates
+*** Configuration management
+*** Monitoring and Alerting
+
+** Core DevOps technologies
+
+*** DVCS
+*** CI
+*** Configuration management
+*** Virtualization
+
+** Postgres devops "must have" tools
+
+*** pgTAP
+
+Suite of DB functions that allow to write and execute unit tests on a
+Postgres DB.
+
+*** Alerting (Icinga)
+*** Trending (Munin)
+*** pgBadger
+
+Log post-analysis.
+
+Allows for graphing various kinds of queries.
+
+*** pg_stat_statements extension
+*** Automated backups
+
+*** Barman
+
+**** Protexts from data loss
+**** Continuos backups and PITR (Point In Time Recovery)
+**** Staging environments with real data
+
+** Transactional DDL
+
+*** Wrap DDL inside an atomic transaction
+*** Schema changes/migrations
+*** Versioning and review
+*** Pay attention and test for:
+**** locking (concurrency)
+**** space
+**** time
+
+** Extensions
+
+Extensions are packages of related DB objects
+
+#+BEGIN_SRC sql
+CREATE EXTENSION muapp;
+#+END_SRC
+
+You can perform atomic upgrades
+
+#+BEGIN_SRC sql
+ALTER EXTENSION myapp UPDATE TO '1.1';
+#+END_SRC
+
+*** Functions
+*** Datatypes
+*** Tables
+*** Operators
+
